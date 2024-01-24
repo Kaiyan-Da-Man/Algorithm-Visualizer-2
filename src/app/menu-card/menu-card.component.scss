@@ -1,0 +1,19 @@
+@use "../../styles/variables.scss";
+
+.btn {
+	float: right;
+	transition: 0.5s;
+	background-color: variables.$orangeRed;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+}
+
+.card {
+	width: 20rem;
+	height: 17rem;
+	top: 1rem;
+	background-color: variables.$darkSeaGreen;
+	// position: relative;
+}
