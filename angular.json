@@ -17,7 +17,8 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": "dist/algorithm-visualizer",
+						"baseHref": "/Algorithm-Visualizer-2/",
+						"outputPath": "dist",
 						"index": "src/index.html",
 						"browser": "src/main.ts",
 						"polyfills": ["zone.js"],
@@ -32,6 +33,7 @@
 					},
 					"configurations": {
 						"production": {
+							"deleteOutputPath": true,
 							"budgets": [
 								{
 									"type": "initial",

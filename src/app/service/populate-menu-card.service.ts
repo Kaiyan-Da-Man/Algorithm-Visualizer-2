@@ -14,7 +14,5 @@ export class JsonInfoService {
 		);
 	}
 
-    getAlgorithmInfo(jsonFileName: string) {
-
-    }
+	getAlgorithmInfo(jsonFileName: string) {}
 }

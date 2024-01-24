@@ -7,7 +7,9 @@
 		"build": "ng build",
 		"watch": "ng build --watch --configuration development",
 		"test": "ng test",
-		"format": "prettier . --write"
+		"format": "prettier . --write",
+		"postbuild": "node .\\post-build.js",
+		"deploy": "ng build --output-path docs"
 	},
 	"private": true,
 	"dependencies": {
@@ -20,6 +22,7 @@
 		"@angular/platform-browser-dynamic": "^17.1.0",
 		"@angular/router": "^17.1.0",
 		"bootstrap": "^5.3.2",
+		"fs-extra": "^3.0.1",
 		"node-sass": "^9.0.0",
 		"prettier": "^3.2.4",
 		"rxjs": "~7.8.0",
