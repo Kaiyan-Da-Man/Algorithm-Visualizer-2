@@ -8,8 +8,7 @@
 		"watch": "ng build --watch --configuration development",
 		"test": "ng test",
 		"format": "prettier . --write",
-		"postbuild": "node .\\post-build.js",
-		"deploy": "ng build --output-path docs"
+		"deploy": "ng build --output-path docs && node .\\post-build.js"
 	},
 	"private": true,
 	"dependencies": {
